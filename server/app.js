@@ -38,6 +38,6 @@ io.on("connection", (socket) => {
   });
 });
 
-app.use(express.static(join(__dirname, '../client/dist')))
+app.use(express.static(join(__dirname, '../client/build')))
 
 server.listen( 3001, () => console.log('SERVER RUNNING'))
