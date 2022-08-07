@@ -40,4 +40,4 @@ io.on("connection", (socket) => {
 
 app.use(express.static(join(__dirname, '../client/build')))
 
-server.listen( process.env.PORT 3001, () => console.log('SERVER RUNNING'))
+server.listen( process.env.PORT || 3001, () => console.log('SERVER RUNNING'))
